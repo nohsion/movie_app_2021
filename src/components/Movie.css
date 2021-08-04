@@ -8,16 +8,23 @@
     width: 80%;
 }
 
+.movies a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .movies .movie {
-    width: 45%;
     background-color: white;
     margin-bottom: 70px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     font-weight: 300;
     padding: 20px;
     border-radius: 5px;
+}
+
+.movies .movie a {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    grid-gap: 20px;
 }
 
 .movie img {
@@ -38,6 +45,7 @@
     margin-bottom: 5px;
     font-size: 24px;
     color: #2c2c2c;
+    flex-wrap: wrap;
 }
 
 .movie .movie__genres {
